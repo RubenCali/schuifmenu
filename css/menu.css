@@ -1,0 +1,41 @@
+nav{
+    background-color: chocolate;
+    color: cornsilk;
+    position: fixed;
+    bottom: 100vh;
+    width: 100vw;
+    height: 100vh;
+    transition: .5s ease-in-out;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav a{
+    color: cornsilk;
+    font-size: 1.2em;
+    padding: 1em 2em;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid cornsilk;
+}
+nav a.actief{
+    padding: 1em 1.3em;
+    border-left: .7em solid cornsilk;
+    border-right: .7em solid cornsilk;
+}
+#menu-schuiver:checked ~ nav {
+bottom: 0vh;
+}
+#menu-schuiver{
+    display: none;
+}
+label.haal-menu{
+    font-size: 1.6em;
+    padding: 1rem 2rem;
+    display: block;
+    border-bottom: 2px solid cornsilk;
+    text-align: right;
+
+}
