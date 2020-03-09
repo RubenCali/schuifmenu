@@ -2,10 +2,10 @@ nav{
     background-color: chocolate;
     color: cornsilk;
     position: fixed;
-    bottom: 100vh;
+    top: 0vh;
     width: 100vw;
     height: 100vh;
-    transition: .5s ease-in-out;
+    transition:  .5s ease-in-out;
 }
 nav ul{
     list-style-type: none;
@@ -26,8 +26,11 @@ nav a.actief{
     border-right: .7em solid cornsilk;
 }
 #menu-schuiver:checked ~ nav {
-bottom: 0vh;
+top: 100vh;
 }
+
+    
+
 #menu-schuiver{
     display: none;
 }
@@ -37,5 +40,4 @@ label.haal-menu{
     display: block;
     border-bottom: 2px solid cornsilk;
     text-align: right;
-
 }
